@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>VR COMP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" crossorigin="anonymous">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+
+</head>
+<body lang="en">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-10"></div>
+            <div class="col-2">
+                <div class="vl_white" id="vl"></div>
+                <nav class="section-nav">
+                    <ul id="nav-bar">
+                        <li><a id="nav_vid" class="white" href="#video" onclick="click_navbar(1, 'nav_vid')">Video</a></li>
+                        <li><a id="nav_prod" class="white" href="#productos" onclick="click_navbar(1, 'nav_prod')">Productos</a></li>
+                        <li><a id="nav_par" class="white" href="#parallax" onclick="click_navbar(0, 'nav_par')">Parallax</a></li>
+                        <li><a id="nav_foot" class="white" href="#footer" onclick="click_navbar(0, 'nav_foot')">Footer</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- FULL SCREEN VIDEO TOP -->
+    <section class="dark" id="video">
+        <div class="container_fluid">
+            <div id="player"></div>
+        </div>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/3dplayer.js"></script>
+    </section>
+    <!-- PRODUCTS SECTION -->
+    <section id="productos">
+        <div class="container-fluid fullscreen" id="products">
+            <div class="row" id="card-deck">
+                <div class="col-10">
+                    <div class="row justify-content-center">
+                        <div class="col-auto mb-3">
+                            <div class="card-wrapper">
+                                <div class="card dark" style="width: 18rem;">
+                                    <img class="card-img-top" src="img/cut.jpg" alt="Card image cap">
+                                    <div class="card-body overlay">
+                                        <h5 class="card-title">Ciudades RV</h5>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-auto mb-3">
+                            <div class="card-wrapper">
+                                <div class="card dark" style="width: 18rem;">
+                                    <img class="card-img-top" src="img/museum.jpg" alt="Card image cap">
+                                    <div class="card-body overlay">
+                                        <h5 class="card-title">Museos RV</h5>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-auto mb-3">
+                            <div class="card-wrapper">
+                                <div class="card dark" style="width: 18rem;">
+                                    <img class="card-img-top" src="img/montaña_rusa.jpg" alt="Card image cap">
+                                    <div class="card-body overlay">
+                                        <h5 class="card-title">Experiencias RV</h5>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-2">
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PARALLAX SECTION -->
+    <section id="parallax">
+        <div class="row project">
+            <div class="col-1"></div>
+            <div class="col-8">
+                <div class="black" id="space_project" style="min-height: 20vh">
+                    <img style="max-width: 85%; max-height: 40vh;" src="img/space_crop.gif">
+                        <h5 class="card-title">Ciudades RV</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="row project">
+            <div class="col-1"></div>
+            <div class="col-8">
+                <div class="black" id="other_project" style="min-height: 20vh">
+                    <img style="max-width: 85%; max-height: 40vh;" src="img/space_crop.gif">
+                    <h5 class="card-title">Ciudades RV</h5>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="page-footer font-small dark" id="footer">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 white">© 2020 Copyright:
+            <a href="#video" style="color:grey" onclick="click_navbar(1,'none')"> Empresa.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <script src = js/animations.js></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></body>
+</body>
+</html>
